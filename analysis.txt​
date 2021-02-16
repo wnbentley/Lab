@@ -1,0 +1,9 @@
+Run time complexity is Big theta(n^2)
+Space complexity is Big Theta(1)
+
+Brute force method is the less convoluted method here since the return needs the locations of the numbers in the unsorted array (and not the numbers that 
+added up to target.) If we sort the array to use pointers at each end walking them in, or a binary search then we'd have to go back to the org unsorted array
+to find where those numbers were located to return unsorted positions. Which, if you can sort the array faster than n^2 would be "faster" it
+doesn't seem very nice. If we just wanted to return a true/false statement, sorting it first would easily win. 
+
+Maybe there are other ways, but it's not obvious to me. 
